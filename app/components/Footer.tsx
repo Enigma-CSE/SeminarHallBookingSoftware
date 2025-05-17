@@ -16,20 +16,25 @@ const Footer: React.FC = () => {
                     </div>
                     <div>
                         <h6 className="text-white text-lg font-semibold mb-4">Navigation Links</h6>
-                        <ul className="space-y-2">
+                        <ul className="space-y-1  ">
                             <li>
                                 <Link href="/" className="hover:text-yellow-400 transition-colors">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/book" className="hover:text-yellow-400 transition-colors">
+                                <Link href="/about" className="hover:text-yellow-400 transition-colors">
                                     About
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/services" className="hover:text-yellow-400 transition-colors">
                                     Services
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/gallery" className="hover:text-yellow-400 transition-colors">
+                                    Gallery
                                 </Link>
                             </li>
                             <li>
@@ -42,11 +47,13 @@ const Footer: React.FC = () => {
                     <div>
                         <h6 className="text-white text-lg font-semibold mb-4">Admin Panel</h6>
                         <p className="text-sm mb-4">Admins can manage bookings and system settings through the panel.</p>
+                        <Link href = "/login">
                         <button
                             className="bg-yellow-400 text-gray-900 px-4 py-2 rounded hover:bg-yellow-500 transition-colors"
                         >
                             Admin Login
-                        </button>
+                        </button></Link>
+                        
                     </div>
                 </div>
                 <div className="border-t border-gray-800 my-8"></div>
